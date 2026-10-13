@@ -1,0 +1,12 @@
+{
+  "apiVersion": 1,
+  "id": "builtin.release-checker",
+  "name": "配布前チェッカー",
+  "author": "ふっきんちゃん",
+  "version": "1.0.0",
+  "description": "音源の構成と原音設定を確認します。ファイルは変更しません。",
+  "permissions": ["voicebank:read"],
+  "commands": [
+    { "id": "check", "title": "配布前チェック" }
+  ]
+}

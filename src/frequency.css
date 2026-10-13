@@ -1,0 +1,33 @@
+.frequency-manager{max-width:1040px;padding:22px}
+.frequency-generate{max-width:1040px;display:flex;align-items:center;gap:18px;flex-wrap:wrap;padding:17px 22px;margin-bottom:16px}
+.frequency-generate h2{font-size:14px;margin:0 0 4px;color:var(--text)}
+.frequency-generate p{font-size:11px;margin:0;color:var(--muted)}
+.frequency-generate-actions{display:flex;gap:8px;margin-left:auto;flex-wrap:wrap}
+.frequency-generate-actions button{font-size:11px;padding:9px 13px}
+.frequency-progress,.frequency-generation-note{width:100%;display:flex;align-items:center;gap:8px;font-size:11px;color:var(--muted)}
+.frequency-spinner{width:13px;height:13px;border:2px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:frequency-spin .7s linear infinite}
+@keyframes frequency-spin{to{transform:rotate(360deg)}}
+.frequency-error{max-width:1040px;white-space:pre-wrap}
+.frequency-tabs{display:flex;gap:8px;border-bottom:1px solid var(--border);padding-bottom:14px}
+.frequency-tabs button{display:flex;align-items:center;gap:10px;border:1px solid var(--border);border-radius:8px;padding:9px 13px;background:var(--surface);color:var(--muted);font-weight:700;font-size:12px}
+.frequency-tabs button.active{border-color:var(--accent);color:var(--accent);background:var(--surface-soft)}
+.frequency-tabs span{font-size:10px;opacity:.8}
+.frequency-list-head{display:flex;align-items:center;justify-content:space-between;gap:18px;margin:20px 0 12px}
+.frequency-list-head h2{font-size:14px;margin:0;color:var(--text)}
+.frequency-files{max-height:55vh;min-height:100px;overflow:auto;border:1px solid var(--border);border-radius:8px}
+.frequency-file{display:flex;align-items:center;gap:12px;min-height:42px;padding:5px 9px 5px 13px;border-bottom:1px solid var(--border)}
+.frequency-file:last-child{border-bottom:0}
+.frequency-file>span{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text);font-size:11px}
+.danger-button{flex:none;border:1px solid #d9a4a7;border-radius:7px;background:transparent;color:#bd555e;padding:7px 11px;font-size:10px;font-weight:700}
+.danger-button:hover{background:#fbebec}
+.frequency-list-footer{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:13px;color:var(--muted);font-size:11px}
+.frequency-list-footer>div{display:flex;gap:7px}
+.frequency-list-footer .secondary-button{padding:8px 12px}
+.phonemizer-help{margin:13px 0 0;padding:11px 13px;border-left:3px solid var(--accent);background:var(--surface-soft);color:var(--muted);font-size:11px;line-height:1.6}
+.dark .file-badge{background:#2e3744;color:#bac7dc}
+.dark .pitch-warning{background:#3b3324;color:#f0d19a}
+.dark .pitch-error{background:#422b31;color:#ffc0c5}
+.dark .field input::placeholder{color:#8792a1}
+.dark .danger-button{border-color:#7e4d55;color:#f1a8ae}
+.dark .danger-button:hover{background:#422b31}
+@media(max-width:680px){.frequency-manager{padding:14px}.frequency-list-head{align-items:flex-start;flex-direction:column}}

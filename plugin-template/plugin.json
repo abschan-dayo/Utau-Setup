@@ -1,0 +1,13 @@
+{
+  "apiVersion": 1,
+  "id": "example.voicebank-report",
+  "name": "音源ファイル一覧サンプル",
+  "author": "サンプル制作者",
+  "version": "1.0.0",
+  "description": "音源内のファイル名を確認し、一覧をテキストに保存します。",
+  "permissions": ["voicebank:read", "voicebank:write"],
+  "commands": [
+    { "id": "show", "title": "一覧を表示" },
+    { "id": "save", "title": "一覧を保存" }
+  ]
+}
